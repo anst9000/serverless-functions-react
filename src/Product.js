@@ -6,7 +6,6 @@ const Product = () => {
   const [loading, setLoading] = useState(true)
   const [product, setProduct] = useState(null)
   const { productID } = useParams();
-  console.log(productID)
 
   const fetchData = async () => {
     try {

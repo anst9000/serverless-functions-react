@@ -21,6 +21,9 @@ exports.handler = async (event, context) => {
       }
 
       return {
+        headers: {
+          "Content-Type": "text/html; charset=UTF-8"
+        },
         statusCode: 200,
         body: JSON.stringify(product)
       }
@@ -44,6 +47,9 @@ exports.handler = async (event, context) => {
     })
 
     return {
+      headers: {
+        "Content-Type": "text/html; charset=UTF-8"
+      },
       statusCode: 200,
       body: JSON.stringify(products),
     }
